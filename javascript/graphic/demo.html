@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>HTML5 example</title>
+		// we need to create a body to avoid error "appendChild of null"
+		<body>dummy body</body>
+		<script src="js/three.min.js"></script>
+		<script type="text/javascript">
+			// global vars
+			var camera, scene, renderer, cube, material, mesh;
+			init();
+
+			function init() {
+				// setup scene
+				scene = new THREE.Scene();
+				camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight,1,10000);
+				// setup the camera in 3d space
+				camera.position.z = 1000;
+				// add camera to 3d scene
+				scene.add(camera);
+				// create an object, cube(w,h,depth)
+				cube = new THREE.CubeGeometry(300, 300, 300);
+				// define the material for the object, color red, in wireframe mode
+				material = new THREE.MeshBasicMaterial({color:0xFF0000, wireframe:true});
+				// combine the material and the geometry into a mesh
+				mesh = new THREE.Mesh(cube, material);
+				// add object to the scene
+				scene.add(mesh);
+				// setup render, size in browser, let fill it
+				renderer = new THREE.WebGLRenderer({antialias:true});
+				renderer.setSize(window.innerWidth, window.innerHeight);
+				// renderer is a dom element, add this to the document
+				document.body.appendChild(renderer.domElement);
+				// annimation frame
+				animate();
+
+			}
+
+			function animate() {
+				// get an animation frame from Three.js
+				requestAnimationFrame(animate);
+				// rotate x-y axis every frame
+				mesh.rotation.x += 0.02;
+				mesh.rotation.y += 0.02;
+				// render this 3d scene, could be multiple cameras
+				renderer.render(scene, camera);
+			}
+		</script>
+	</head>
+</html>

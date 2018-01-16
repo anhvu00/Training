@@ -1,2 +1,2 @@
 # Training
-Training for junior developers
+This repository contains sample code to train junior developers...
