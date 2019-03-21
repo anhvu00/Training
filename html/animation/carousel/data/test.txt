@@ -1,0 +1,27 @@
+test file
+
+
+issue, meeeting with ote leslie
+
+plan, meet with zebad eew, ote report/approval
+
+
+done, building a baseball card
+
+
+https://freshdesignweb.com/free-css-tables/
+https://colorlib.com/wp/css3-table-templates/
+http://ianlunn.github.io/Hover/
+
+For this web site:
+https://freshdesignweb.com/css3-buttons/
+Test out:
+#26 - metal
+#41 - animated
+#44 - switch
+#57 - Biz pro
+
+I'm looking for the following, high-to-low order of desire (best if have all):
+- animated
+- icon along side with text
+- metalic/cool looking

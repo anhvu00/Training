@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> this is my test </title>
+  <link rel="stylesheet" type="text/css" href="./_css/main.css" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="./_css/transitions.css" media="screen,projection"/>  
+  <link rel="stylesheet" type="text/css" href="./_css/water/style.css" media="screen,projection"/>  
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script src="MyJSON.js"></script>
+  <script src="one.js"></script> 
+  <script src="myDragDrop.js"></script> 
+  <script src="./lib/modernizr.2.5.3.min.js"></script>
+  <script src="./lib/utils.js"></script>
+  <script src="./lib/gallery.js"></script>   
+  <style>
+	#drop_zone {
+	  border: 5px solid blue;
+	  width:  200px;
+	  height: 100px;
+	}
+  </style>	
+  <!-- Carousel jquery functions -->
+  <script type="text/javascript">
+	var inc=1;
+	$(function () {
+			$('#next').click(
+				function () {
+					var currentFig = "#fig" + inc;
+					if (inc == 10) {
+						nextFig = "#fig1";
+					} else {
+						nextFig = "#fig" + (inc + 1);
+					}
+					$(nextFig).addClass('showFig');
+					$(currentFig).removeClass('showFig');	
+					inc++;
+					if (inc == 11) { inc = 1; } 
+				}
+			);	
+			$('#previous').click(
+				function () {
+					var currentFig = "#fig" + inc;
+					if (inc == 1) {
+						prevFig = "#fig10";
+					} else {
+						prevFig = "#fig" + (inc - 1);
+					}
+					$(prevFig).addClass('showFig');
+					$(currentFig).removeClass('showFig');	
+					inc--;
+					if (inc == 0) { inc = 10; } 
+			}
+			);	
+	});
+	</script>
+
+</head>
+<body>
+  <h1>do something</h1>
+  <section id="input_section">
+    <input type="button" onclick="getSum(3,4)" value="total"></input>
+    <input type="button" onclick="myAry()" value="ary"></input>  
+    <input type="button" onclick="myPrompt()" value="prompt"></input>
+    <input type="button" onclick="myHistory()" value="history"></input>  
+    <input type="button" onclick="myLocation()" value="location"></input>
+    <input type="button" onclick="parseJSON(Mary)" value="Mary"></input>
+    <input type="button" onclick="makeJSON(Dan)" value="Dan"></input>
+
+  
+  </section>
+
+  <h2>my text</h2>
+  <!-- what do I want with section here? -->
+  <section id="text_section">
+  	<div id="para1">
+  		<p>now is the time for all good men</p>
+  	</div>
+  	<div id="para2">
+  		<p><b>to go</b> to the aide of their country.</p>
+  	</div>
+  </section>
+
+  <h2>my video</h2>
+  <video src="./data/marcus_sing.mov" width="350" height="350" controls="controls"></video>
+
+  <h2>my audio</h2>
+  <audio src="./data/speak_softly_love.mp3" controls="controls"></audio>
+
+  <h2>my drag-n-drop</h2>
+  <div id="drop_zone" ondrop="dropHandler_1(event);" ondragover="dragOverHandler(event);">
+    <p>Drag one or more files to this Drop Zone ...</p>
+  </div>
+
+  <h2>my image</h2>
+  <img src="./data/Desert.jpg" alt="desert image" onmouseover="this.src='./data/Jellyfish.jpg'" 
+  onmouseout="this.src='./data/Desert.jpg'" width="400" height="300"></img>
+
+</body>
+
+<h2>my svg</h2>
+<svg width="200" height="200">
+	<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+<h2>my carousel</h2>
+<article id="spotlight" class="cf">
+<div id="gallery">
+	<section class="container">
+		<div id="carousel">
+		<!-- class ShowFig shows the main photo -->
+		<figure id="fig1" class="showFig"><img src="./data/Desert.jpg" width="220" height="120"></figure>
+		<figure id="fig2"><img src="./data/Jellyfish.jpg" width="220" height="120"></figure>
+		<figure id="fig3"><img src="./data/Koala.jpg" width="220" height="120"></figure>
+		<figure id="fig4"><img src="./data/Lighthouse.jpg" width="220" height="120"></figure>
+		<figure id="fig5"><img src="./data/Penguins.jpg" width="220" height="120"></figure>
+		<figure id="fig6"><img src="./data/Tulips.jpg" width="220" height="120"></figure>
+        </div>
+	</section>
+	<section id="options">
+		<p id="toggle"><button id="toggle-axis">Toggle Axis</button></p>
+		<p id="navigation">
+			<input id="panel-count" type="hidden" value="6"></input>
+			<button id="previous" data-increment="-1">Previous</button>
+			<button id="next" data-increment="1">Next</button>
+		</p>
+	</section>
+</div>
+</article>
+<footer>This is my footer</footer>
+
+
+</html>
