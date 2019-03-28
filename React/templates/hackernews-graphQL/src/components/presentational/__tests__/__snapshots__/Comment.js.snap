@@ -1,0 +1,448 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comment component renders a comment passed in as props 1`] = `
+<tr
+  className="athing comtr "
+  id="15238246"
+>
+  <td>
+    <table
+      style={
+        Object {
+          "border": "0",
+        }
+      }
+    >
+      <tbody>
+        <tr>
+          <td
+            className="ind"
+          >
+            <img
+              alt=""
+              height="1"
+              src="/static/s.gif"
+              width="0px"
+            />
+          </td>
+          <td
+            className="votelinks"
+            style={
+              Object {
+                "verticalAlign": "top",
+              }
+            }
+          >
+            <center>
+              <a
+                href="vote?id=15238246&how=up&auth=4eb97bf0d2568aa743691210b904f0c5182bb0fc&goto=item%3Fid%3D15237896#15238246"
+                id="up_15238246"
+                onClick={[Function]}
+              >
+                <div
+                  className="votearrow"
+                  title="upvote"
+                />
+              </a>
+            </center>
+          </td>
+          <td
+            className="default"
+          >
+            <div
+              style={
+                Object {
+                  "marginBottom": "-10px",
+                  "marginTop": "2px",
+                }
+              }
+            >
+              <span
+                className="comhead"
+              >
+                <Link
+                  href="/user?id=mstade"
+                  prefetch={true}
+                >
+                  <a
+                    className="hnuser"
+                  >
+                    megous
+                  </a>
+                </Link>
+                <span
+                  className="age"
+                >
+                   
+                  <Link
+                    href="/item?id=15289630"
+                    prefetch={true}
+                  >
+                    <a>
+                      1 day ago
+                    </a>
+                  </Link>
+                </span>
+                 
+                <span
+                  id="unv_15238246"
+                />
+                <span
+                  className="par"
+                />
+                 
+                <a
+                  className="togg"
+                  href="javascript:void(0)"
+                  id="24"
+                  onClick={[Function]}
+                >
+                  [-]
+                </a>
+                <span
+                  className="storyon"
+                />
+              </span>
+            </div>
+            <br />
+            <div
+              className="comment"
+            >
+              <span
+                className="c00"
+              >
+                <span>
+                  It is part of it in this case. You've just eliminated most of non-targeted scanners. Your log is much more readable and what is left will probably be dedicated attackers.
+                  <p
+                    key="1"
+                  >
+                    This might help in forensic investigation afterwards. Less crap to wade through.
+                  </p>
+                </span>
+                <div
+                  className="reply"
+                >
+                  <p>
+                    <font
+                      size="1"
+                    >
+                      <u>
+                        <Link
+                          href="/reply?id=15289630&goto=item%3Fid%3D15289630"
+                          prefetch={true}
+                        >
+                          <a>
+                            reply
+                          </a>
+                        </Link>
+                      </u>
+                    </font>
+                  </p>
+                </div>
+              </span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+`;
+
+exports[`Comment component renders at different indentation levels 1`] = `
+<tr
+  className="athing comtr "
+  id="15238246"
+>
+  <td>
+    <table
+      style={
+        Object {
+          "border": "0",
+        }
+      }
+    >
+      <tbody>
+        <tr>
+          <td
+            className="ind"
+          >
+            <img
+              alt=""
+              height="1"
+              src="/static/s.gif"
+              width="0px"
+            />
+          </td>
+          <td
+            className="votelinks"
+            style={
+              Object {
+                "verticalAlign": "top",
+              }
+            }
+          >
+            <center>
+              <a
+                href="vote?id=15238246&how=up&auth=4eb97bf0d2568aa743691210b904f0c5182bb0fc&goto=item%3Fid%3D15237896#15238246"
+                id="up_15238246"
+                onClick={[Function]}
+              >
+                <div
+                  className="votearrow"
+                  title="upvote"
+                />
+              </a>
+            </center>
+          </td>
+          <td
+            className="default"
+          >
+            <div
+              style={
+                Object {
+                  "marginBottom": "-10px",
+                  "marginTop": "2px",
+                }
+              }
+            >
+              <span
+                className="comhead"
+              >
+                <Link
+                  href="/user?id=mstade"
+                  prefetch={true}
+                >
+                  <a
+                    className="hnuser"
+                  >
+                    megous
+                  </a>
+                </Link>
+                <span
+                  className="age"
+                >
+                   
+                  <Link
+                    href="/item?id=15289630"
+                    prefetch={true}
+                  >
+                    <a>
+                      1 day ago
+                    </a>
+                  </Link>
+                </span>
+                 
+                <span
+                  id="unv_15238246"
+                />
+                <span
+                  className="par"
+                />
+                 
+                <a
+                  className="togg"
+                  href="javascript:void(0)"
+                  id="24"
+                  onClick={[Function]}
+                >
+                  [-]
+                </a>
+                <span
+                  className="storyon"
+                />
+              </span>
+            </div>
+            <br />
+            <div
+              className="comment"
+            >
+              <span
+                className="c00"
+              >
+                <span>
+                  It is part of it in this case. You've just eliminated most of non-targeted scanners. Your log is much more readable and what is left will probably be dedicated attackers.
+                  <p
+                    key="1"
+                  >
+                    This might help in forensic investigation afterwards. Less crap to wade through.
+                  </p>
+                </span>
+                <div
+                  className="reply"
+                >
+                  <p>
+                    <font
+                      size="1"
+                    >
+                      <u>
+                        <Link
+                          href="/reply?id=15289630&goto=item%3Fid%3D15289630"
+                          prefetch={true}
+                        >
+                          <a>
+                            reply
+                          </a>
+                        </Link>
+                      </u>
+                    </font>
+                  </p>
+                </div>
+              </span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+`;
+
+exports[`Comment component shallow renders 1`] = `
+<tr
+  className="athing comtr "
+  id="15238246"
+>
+  <td>
+    <table
+      style={
+        Object {
+          "border": "0",
+        }
+      }
+    >
+      <tbody>
+        <tr>
+          <td
+            className="ind"
+          >
+            <img
+              alt=""
+              height="1"
+              src="/static/s.gif"
+              width="0px"
+            />
+          </td>
+          <td
+            className="votelinks"
+            style={
+              Object {
+                "verticalAlign": "top",
+              }
+            }
+          >
+            <center>
+              <a
+                href="vote?id=15238246&how=up&auth=4eb97bf0d2568aa743691210b904f0c5182bb0fc&goto=item%3Fid%3D15237896#15238246"
+                id="up_15238246"
+                onClick={[Function]}
+              >
+                <div
+                  className="votearrow"
+                  title="upvote"
+                />
+              </a>
+            </center>
+          </td>
+          <td
+            className="default"
+          >
+            <div
+              style={
+                Object {
+                  "marginBottom": "-10px",
+                  "marginTop": "2px",
+                }
+              }
+            >
+              <span
+                className="comhead"
+              >
+                <Link
+                  href="/user?id=mstade"
+                  prefetch={true}
+                >
+                  <a
+                    className="hnuser"
+                  >
+                    megous
+                  </a>
+                </Link>
+                <span
+                  className="age"
+                >
+                   
+                  <Link
+                    href="/item?id=15289630"
+                    prefetch={true}
+                  >
+                    <a>
+                      1 day ago
+                    </a>
+                  </Link>
+                </span>
+                 
+                <span
+                  id="unv_15238246"
+                />
+                <span
+                  className="par"
+                />
+                 
+                <a
+                  className="togg"
+                  href="javascript:void(0)"
+                  id="24"
+                  onClick={[Function]}
+                >
+                  [-]
+                </a>
+                <span
+                  className="storyon"
+                />
+              </span>
+            </div>
+            <br />
+            <div
+              className="comment"
+            >
+              <span
+                className="c00"
+              >
+                <span>
+                  It is part of it in this case. You've just eliminated most of non-targeted scanners. Your log is much more readable and what is left will probably be dedicated attackers.
+                  <p
+                    key="1"
+                  >
+                    This might help in forensic investigation afterwards. Less crap to wade through.
+                  </p>
+                </span>
+                <div
+                  className="reply"
+                >
+                  <p>
+                    <font
+                      size="1"
+                    >
+                      <u>
+                        <Link
+                          href="/reply?id=15289630&goto=item%3Fid%3D15289630"
+                          prefetch={true}
+                        >
+                          <a>
+                            reply
+                          </a>
+                        </Link>
+                      </u>
+                    </font>
+                  </p>
+                </div>
+              </span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+`;

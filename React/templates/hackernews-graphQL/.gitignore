@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+logs
+coverage
+
+.next
+build/static
+build/app
+.env
+
+.DS_Store
+.vscode
